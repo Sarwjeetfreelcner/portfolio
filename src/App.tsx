@@ -91,10 +91,10 @@ const industries = [
 ]
 
 const projects = [
-  { name: 'Curestream AI', color: '#00d563' },
-  { name: 'Voece AI', color: '#3b82f6' },
-  { name: 'Amodoc', color: '#8b5cf6' },
-  { name: 'Sunao OTT Platform', color: '#f59e0b' },
+  { name: 'Curestream AI', color: '#00d563', image: '/portfolio/images/curastream.png' },
+  { name: 'Voece AI', color: '#3b82f6', image: '/portfolio/images/voece.png' },
+  { name: 'Amodoc', color: '#8b5cf6', image: '/portfolio/images/airodoc.png' },
+  { name: 'Sunao OTT Platform', color: '#f59e0b', image: '/portfolio/images/sunoo.png' },
 ]
 
 const testimonials = [
@@ -137,7 +137,7 @@ function App() {
       <aside className="sidebar">
         <div className="profile-card">
           <div className="profile-image-container">
-            <div className="profile-placeholder">SK</div>
+            <img src="/portfolio/images/profile.png" alt="Sarwjeet Kumar" className="profile-image" />
           </div>
           <h1 className="profile-name">Sarwjeet Kumar</h1>
           <p className="profile-title">Senior React Developer</p>
@@ -267,9 +267,7 @@ function App() {
             {projects.map((project, index) => (
               <div key={index} className="project-card">
                 <div className="project-image">
-                  <div className="project-placeholder" style={{ background: `linear-gradient(135deg, ${project.color}22 0%, ${project.color}44 100%)` }}>
-                    {project.name.charAt(0)}
-                  </div>
+                  <img src={project.image} alt={project.name} />
                 </div>
                 <div className="project-info">
                   <h3 className="project-title">{project.name}</h3>
