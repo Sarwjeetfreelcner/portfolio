@@ -84,10 +84,10 @@ const industries = [
 ]
 
 const projects = [
-  { name: 'Curestream AI', color: '#00d563', image: '/portfolio/images/curastream.png' },
-  { name: 'Voece AI', color: '#3b82f6', image: '/portfolio/images/voece.png' },
-  { name: 'Amodoc', color: '#8b5cf6', image: '/portfolio/images/airodoc.png' },
-  { name: 'Sunao OTT Platform', color: '#f59e0b', image: '/portfolio/images/sunoo.png' },
+  { name: 'Curastream', color: '#00d563', image: '/portfolio/images/curastream.png', link: 'https://curastream.ai/en/' },
+  { name: 'AIRadoc', color: '#8b5cf6', image: '/portfolio/images/airodoc.png', link: 'https://airadoc.com/' },
+  { name: 'Sunoo', color: '#f59e0b', image: '/portfolio/images/sunoo.png', link: 'https://sunoo.app/' },
+  { name: 'OTT platform', color: '#3b82f6', image: '/portfolio/images/voece.png', link: 'https://voece.ai/' },
 ]
 
 const testimonials = [
@@ -258,14 +258,21 @@ function App() {
           </h2>
           <div className="projects-grid">
             {projects.map((project, index) => (
-              <div key={index} className="project-card">
+              <a
+                key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card"
+                style={{ textDecoration: 'none' }}
+              >
                 <div className="project-image">
                   <img src={project.image} alt={project.name} />
                 </div>
                 <div className="project-info">
                   <h3 className="project-title">{project.name}</h3>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
