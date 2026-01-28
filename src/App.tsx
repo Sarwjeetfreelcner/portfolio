@@ -86,8 +86,8 @@ const industries = [
 const projects = [
   { name: 'Curastream', color: '#00d563', image: '/portfolio/images/curastream.png', link: 'https://curastream.ai/en/' },
   { name: 'AIRadoc', color: '#8b5cf6', image: '/portfolio/images/airodoc.png', link: 'https://airadoc.com/' },
-  { name: 'Sunoo', color: '#f59e0b', image: '/portfolio/images/sunoo.png', link: 'https://sunoo.app/' },
-  { name: 'OTT platform', color: '#3b82f6', image: '/portfolio/images/voece.png', link: 'https://voece.ai/' },
+  { name: 'Sunoo OTT platform', color: '#f59e0b', image: '/portfolio/images/sunoo.png', link: 'https://sunoo.app/' },
+  { name: 'Voece AI', color: '#3b82f6', image: '/portfolio/images/voece.png', link: 'https://voece.ai/' },
 ]
 
 const testimonials = [
