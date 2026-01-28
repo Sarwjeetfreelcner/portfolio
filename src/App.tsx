@@ -7,13 +7,6 @@ const StarIcon = () => (
   </svg>
 )
 
-const EmailIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-    <polyline points="22,6 12,13 2,6" />
-  </svg>
-)
-
 // Navigation Icons
 const IntroduceIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -321,10 +314,6 @@ function App() {
             <p className="hero-intro">
               Ready to bring your next project to life? I'm available for freelance work and exciting collaboration opportunities. Let's create something amazing together!
             </p>
-            <a href="mailto:sarwjeetfreelancer@gmail.com" className="contact-email">
-              <EmailIcon />
-              sarwjeetfreelancer@gmail.com
-            </a>
           </div>
         </section>
       </main>
