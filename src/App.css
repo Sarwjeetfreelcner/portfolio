@@ -12,13 +12,14 @@
    ============================================ */
 .sidebar {
   width: 350px;
-  min-height: 100vh;
+  height: calc(100vh - 80px);
   background-color: var(--color-bg-secondary);
-  border-right: 1px solid var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
   padding: var(--spacing-xl);
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 40px;
+  top: 40px;
   display: flex;
   flex-direction: column;
   z-index: 100;
@@ -77,7 +78,7 @@
    ============================================ */
 .nav-sidebar {
   position: fixed;
-  right: 20px;
+  right: 40px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -145,9 +146,10 @@
    ============================================ */
 .main-content {
   flex: 1;
-  margin-left: 350px;
-  padding: var(--spacing-3xl);
-  padding-right: 80px;
+  margin-left: 390px;
+  padding: var(--spacing-3xl) 0;
+  padding-left: 100px;
+  padding-right: 184px;
 }
 
 /* ============================================
@@ -801,14 +803,18 @@
   .sidebar {
     position: relative;
     width: 100%;
-    min-height: auto;
-    border-right: none;
+    height: auto;
+    left: 0;
+    top: 0;
+    border: none;
+    border-radius: 0;
     border-bottom: 1px solid var(--color-border);
     padding: var(--spacing-lg);
   }
 
   .main-content {
     margin-left: 0;
+    padding: var(--spacing-xl);
     padding-right: var(--spacing-3xl);
   }
 
